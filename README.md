@@ -52,6 +52,10 @@ List<String> history = calculator.getHistory();
 
 ### Completion
 
-It is not allowed to change the signature of Calculator class, neither change the tests. Other than that, you are free to implement the logic the way you want.
+It is not allowed to change the signature of method `calculate` of `Calculator class`, neither change the tests. Other than that, you are free to implement the logic the way you want.
 
-> The exercise is completed when all tests of `CalculatorTest` are passing.
+**The exercise is completed when all tests of `CalculatorTest` are passing.**
+
+### Hint
+
+ To format decimal `1.0` to integer string `1`, you can use `String.format("%.0f", 1D);`

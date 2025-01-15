@@ -51,6 +51,18 @@ public class CalculatorTest {
         assertThrows(IllegalArgumentException.class, () -> {
             new Calculator().calculate(" + ");
         });
+
+        assertThrows(IllegalArgumentException.class, () -> {
+            new Calculator().calculate("1 - ");
+        });
+
+        assertThrows(IllegalArgumentException.class, () -> {
+            new Calculator().calculate("1 / ");
+        });
+
+        assertThrows(IllegalArgumentException.class, () -> {
+            new Calculator().calculate("1 * ");
+        });
     }
 
     @Test
